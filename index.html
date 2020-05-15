@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Extraction</title>
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/fonts.css">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="wrapper">
+      <div class="header__title">
+        Извлечение номеров клиентов, совершивших покупку
+      </div>
+    </div>
+  </header>
+  <div class="file-loader">
+    <div class="wrapper">
+      <div class="full-list-loader">
+        <p>
+          Полный список номеров:
+        </p>
+        <input type="file" name="full-list" id="full-list">
+      </div>
+      <div class="exception-list-loader">
+        <p>
+          Список исключений (открытые наработки, отказы):
+        </p>
+        <input type="file" name="exception-list" id="exception-list">
+      </div>
+    </div>
+  </div>
+  <div class="result">
+    <div class="wrapper">
+      <button id="result">Получить результат</button>
+      <div class="result__list"></div>
+    </div>
+  </div>
+  <script src="js.js"></script>
+</body>
+
+</html>
